@@ -2,6 +2,12 @@ import streamlit as st
 from pathlib import Path
 import markdown
 from datetime import datetime
+with open("templates/github_style.css", "r") as f:
+
+
+    
+css_path = Path(__file__).parent / "templates" / "github_style.css"
+with open(css_path, "r") as f:
 
 # Load custom CSS for GitHub-style
 with open("templates/github_style.css", "r") as f:
